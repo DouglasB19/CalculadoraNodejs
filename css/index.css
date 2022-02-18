@@ -11,7 +11,7 @@ html{
 
 
 body{
-    background-color: #707070;
+    background-color: #b6b6b6;
 }
 
 header h1,
@@ -46,7 +46,7 @@ header a{
 }
 header h1:hover,
 header a:hover{
-    color: #ED55ED;
+    color: #ed5555;
 }
 
 .lgo h1 a{
@@ -101,12 +101,18 @@ button.active{
     color: #fff;
 }
 
+.calculadora h1:hover{
+    color: #ff0000;
+    opacity: .6;
+}
+
 form input,
 form textarea{
     display: block;
     padding: 20px;
-    background-color: #707070;
-    border: 3px solid rgb(158, 158, 158);
+    background-color: #b6b6b6;
+    border: 3px solid rgb(73, 73, 73);
+    border-radius: 5px;
     margin: 20px 0;
     outline: none;
     font-size: 1.2rem;
@@ -290,6 +296,17 @@ tbody, tr, .contact{
 
     .leftbar{
         margin-top: 77px;
+    }
+
+    .calculadora{
+        margin-top: 80px;
+    }
+
+    .calculadora h1{
+        text-align: right;
+        font-size: 7rem;
+        opacity: .5;
+        transition: .8s;
     }
 
     form input,
