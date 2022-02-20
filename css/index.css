@@ -101,6 +101,14 @@ button.active{
     color: #fff;
 }
 
+.calculadora{
+    text-align: center;
+    position: relative;
+    left: calc(50% - 100px);
+    right: calc(50% - 100px);
+    transform: translateX(calc(-50% + 100px));
+}
+
 .calculadora h1:hover{
     color: #ff0000;
     opacity: .6;
@@ -194,8 +202,7 @@ tbody, tr, .contact{
         margin-top: -77px;
     }
 
-    form input,
-    form textarea{
+    .calculadora{
         width: 310px;
     }
 }
@@ -303,8 +310,6 @@ tbody, tr, .contact{
     }
 
     .calculadora h1{
-        text-align: right;
-        font-size: 7rem;
         opacity: .5;
         transition: .8s;
     }
