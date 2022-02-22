@@ -41,12 +41,12 @@ header{
 
 header h1,
 header a{
-    color: #707070;
+    color: #aaaaaa;
     transition: .4s;
 }
 header h1:hover,
 header a:hover{
-    color: #ed5555;
+    color: #ffc796;
 }
 
 .lgo h1 a{
@@ -101,13 +101,8 @@ button.active{
     color: #fff;
 }
 
-.fundo-calcu{
-    min-height: 400px;
-    padding: 0 300px 0 300px;
-}
-
 .calculadora{
-    width: 50%;
+    width: 25%;
     text-align: center;
     position: relative;
     left: calc(50% - 100px);
@@ -118,26 +113,35 @@ button.active{
     padding: 15px;
 }
 
+.calculadora h1{
+    color: #ffffff;
+}
 .calculadora h1:hover{
-    color: #ff0000;
-    opacity: .6;
+    color: #ffeddd;
+    opacity: .9;
 }
 
 table{
     width: 100%;
-    height: 100%;
 }
 
-tr{
-    width: 25%;
-    height: 25%;
+td{
+    padding: 2px 2px;
+    width: 50px;
+    height: 50px;
 }
 
 .button{
     width: 100%;
     height: 100%;
     font-size: 25px;
-    /*margin: 5px 5px;*/
+    cursor: pointer;
+    background-color: #202020;
+    border: none;
+    color: antiquewhite;
+}
+.button:hover{
+    background-color: #121212;
 }
 
 form input,
@@ -172,7 +176,7 @@ form input:last-child:hover{
 
 .footer hr{
     border: 2px solid #707070;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .footer p{
@@ -183,13 +187,11 @@ form input:last-child:hover{
 }
 
 .resultado{
-    display: none;
-    width: 70%;
-    margin: 20px 15% 10px 15%;
-    background-color: #ffd5ff;
-    text-align: center;
+    margin: 5px;
+    background-color: #fdf4ec;
+    text-align: right;
     padding: 15px;
-    border: 2px solid #ED55ED;
+    border: 1px solid #ffc796;
 }
 
 tbody, tr, .contact{
@@ -332,7 +334,7 @@ tbody, tr, .contact{
     }
 
     .calculadora{
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     .calculadora h1{
@@ -344,11 +346,6 @@ tbody, tr, .contact{
     form textarea{
         width: 500px;
     }
-}
-
-.fundo-calcu{
-    min-height: 400px;
-    padding: 0 25% 0 25%;
 }
 
 .show{
