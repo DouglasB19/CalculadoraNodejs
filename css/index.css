@@ -187,11 +187,14 @@ form input:last-child:hover{
 }
 
 .resultado{
+    height: 35px;
     margin: 5px;
     background-color: #fdf4ec;
     text-align: right;
-    padding: 15px;
+    font-size: 20px;
+    padding: 5px;
     border: 1px solid #ffc796;
+    color: #000;
 }
 
 tbody, tr, .contact{
