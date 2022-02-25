@@ -5,7 +5,6 @@
     let resultConta = doc.querySelector(".resultado");
 
     function calcu(event){
-        //for(let i = 0; i < botao.length; i++){}
         console.log(event.target.id);
         switch(event.target.id){
             case "0":
@@ -25,6 +24,19 @@
             case ".":
                 let valor = resultConta.innerHTML;
                 resultConta.innerHTML = valor + event.target.id;
+                break;
+            case "C":
+                resultConta.innerHTML = "";
+                break;
+            case "<":
+                let result = resultConta.innerHTML;
+                resultConta.innerHTML = result.substring(0, result.length -1);
+                break;
+            case "=":
+                let conta = resultConta.innerHTML;
+                if(conta){
+                    resultConta.innerHTML = eval(conta);
+                }
                 break;
         }
     }
