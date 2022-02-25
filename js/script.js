@@ -6,6 +6,7 @@
 
     function calcu(event){
         console.log(event.target.id);
+        let valor = resultConta.innerHTML;
         switch(event.target.id){
             case "0":
             case "1":
@@ -17,28 +18,33 @@
             case "7":
             case "8":
             case "9":
+            case ".":
+                resultConta.innerHTML = valor + event.target.id;
+                break;
             case "+":
             case "-":
             case "X":
             case "/":
-            case ".":
-                let valor = resultConta.innerHTML;
-                resultConta.innerHTML = valor + event.target.id;
+                if(valor){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
                 break;
             case "C":
                 resultConta.innerHTML = "";
                 break;
             case "<":
-                let result = resultConta.innerHTML;
-                resultConta.innerHTML = result.substring(0, result.length -1);
+                resultConta.innerHTML = valor.substring(0, valor.length -1);
                 break;
             case "=":
-                let conta = resultConta.innerHTML;
-                if(conta){
-                    resultConta.innerHTML = eval(conta);
+                if(valor){
+                    resultConta.innerHTML = eval(valor);
                 }
                 break;
         }
+    }
+
+    function opVale(){
+
     }
 
     for(let i = 0; i < botao.length; i++){
