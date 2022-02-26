@@ -14,12 +14,6 @@ body{
     background-color: #b6b6b6;
 }
 
-header h1,
-header a
-{
-    color: #707070;
-}
-
 .navbar{
     background-color: #181818;
     width: 100%;
@@ -34,9 +28,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.header-left{
-    display: block;
 }
 
 header h1,
@@ -78,102 +69,6 @@ a{
     justify-content: center;
 }
 
-.leftbar{
-    display: none;
-    background-color: #181818;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 101;
-}
-
-.ul-leftbar{
-    display: block;
-}
-
-.ul-leftbar li{
-    padding: 15px 0;
-    width: 200px;
-}
-
-button.active{
-    color: #fff;
-}
-
-.calculadora{
-    width: 25%;
-    text-align: center;
-    position: relative;
-    left: calc(50% - 100px);
-    right: calc(50% - 100px);
-    transform: translateX(calc(-50% + 100px));
-    background-color: rgb(73, 73, 73);
-    border-radius: 15px;
-    padding: 15px;
-}
-
-.calculadora h1{
-    color: #ffffff;
-}
-.calculadora h1:hover{
-    color: #ffeddd;
-    opacity: .9;
-}
-
-table{
-    width: 100%;
-}
-
-td{
-    padding: 2px 2px;
-    width: 50px;
-    height: 50px;
-}
-
-.button{
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    cursor: pointer;
-    background-color: #202020;
-    border: none;
-    color: antiquewhite;
-}
-.button:hover{
-    background-color: #121212;
-}
-
-form input,
-form textarea{
-    display: block;
-    padding: 20px;
-    background-color: #b6b6b6;
-    border: 3px solid rgb(73, 73, 73);
-    border-radius: 5px;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
-
-form input:last-child{
-    width: 150px;
-    background-color: none;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: opacity .3s;
-}
-form input:last-child:hover{
-    opacity: .5;
-}
-
 .footer hr{
     border: 2px solid #707070;
     margin-top: 110px;
@@ -186,16 +81,6 @@ form input:last-child:hover{
     padding: 30px 0;
 }
 
-.resultado{
-    height: 35px;
-    margin: 5px;
-    background-color: #fdf4ec;
-    text-align: right;
-    font-size: 20px;
-    padding: 5px;
-    border: 1px solid #ffc796;
-    color: #000;
-}
 
 tbody, tr, .contact{
     overflow: auto;
@@ -212,8 +97,7 @@ tbody, tr, .contact{
         padding: 0;
     }
 
-    .lgo,
-    .aLeftbar{
+    .lgo{
         display: none;
     }
 
@@ -227,14 +111,6 @@ tbody, tr, .contact{
 
     a{
         font-size: .75rem;
-    }
-
-    .leftbar{
-        margin-top: -77px;
-    }
-
-    .calculadora{
-        width: 310px;
     }
 }
 
@@ -250,26 +126,12 @@ tbody, tr, .contact{
         padding: 0;
     }
 
-    .lgo,
-    .aLeftbar{
+    .lgo{
         display: none;
     }
 
     nav{
         width: 100%;
-    }
-
-    li{
-        width: 25%;
-    }
-
-    .leftbar{
-        margin-top: -76px;
-    }
-
-    form input,
-    form textarea{
-        width: 310px;
     }
 }
 
@@ -283,78 +145,16 @@ tbody, tr, .contact{
     .navbar{
         top: 0;
     }
-
-    li{
-        list-style: none;
-        width: 120px;
-        transition: .4s;
-    }
-
-    .leftbar{
-        margin-top: 77px;
-    }
-
-    form input,
-    form textarea{
-        width: 500px;
-    }
 }
 
 /*XLarges Screens*/
 @media screen and (min-width: 1200px) {
     .container{
         padding: 0 100px 0 100px;
-        /*border: 3px solid #ED5565;*/
     }
 
     .navbar{
         top: 0;
     }
-    .navbar.sticky{
-        position: fixed;
-        left: 0;
-        right: 0;
-        width: 100%;
-        transition: .4s;
-        padding: 10px 130px;
-    }
-    .navbar.sticky h1{
-        color: #707070;
-        transition: .6s;
-    }
-    .navbar.sticky a{
-        transition: .6s;
-    }
 
-    li{
-        list-style: none;
-        width: 150px;
-        transition: .4s;
-    }
-
-    .leftbar{
-        margin-top: 77px;
-    }
-
-    .calculadora{
-        margin-top: 90px;
-    }
-
-    .calculadora h1{
-        opacity: .5;
-        transition: .8s;
-    }
-
-    form input,
-    form textarea{
-        width: 500px;
-    }
-}
-
-.show{
-    display: block;
-}
-
-.remove{
-    display: none;
 }

@@ -5,7 +5,6 @@
     let resultConta = doc.querySelector(".resultado");
 
     function calcu(event){
-        console.log(event.target.id);
         let valor = resultConta.innerHTML;
         switch(event.target.id){
             case "0":
@@ -23,7 +22,7 @@
                 break;
             case "+":
             case "-":
-            case "X":
+            case "*":
             case "/":
                 if(valor){
                     resultConta.innerHTML = valor + event.target.id;
@@ -41,10 +40,6 @@
                 }
                 break;
         }
-    }
-
-    function opVale(){
-
     }
 
     for(let i = 0; i < botao.length; i++){
