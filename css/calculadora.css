@@ -54,3 +54,27 @@ td{
     border: 1px solid #ffc796;
     color: #000;
 }
+
+@media screen and (max-width: 480px) {
+    .calculadora{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .calculadora{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .calculadora{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .calculadora{
+        width: 25%;
+    }
+}
