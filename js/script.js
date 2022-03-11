@@ -17,15 +17,33 @@
             case "7":
             case "8":
             case "9":
-            case ".":
                 resultConta.innerHTML = valor + event.target.id;
+                break;
+            case ".":
+                if(!valor.includes(".")){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
+                if(!valor.includes(".", valor.lastIndexOf("+"))){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
+                if(!valor.includes(".", valor.lastIndexOf("-"))){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
+                if(!valor.includes(".", valor.lastIndexOf("*"))){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
+                if(!valor.includes(".", valor.lastIndexOf("/"))){
+                    resultConta.innerHTML = valor + event.target.id;
+                }
                 break;
             case "+":
             case "-":
             case "*":
             case "/":
                 if(valor){
-                    resultConta.innerHTML = valor + event.target.id;
+                    if(!valor.endsWith("+") && !valor.endsWith("-") && !valor.endsWith("*") && !valor.endsWith("/")){
+                        resultConta.innerHTML = valor + event.target.id;
+                    }
                 }
                 break;
             case "C":
